@@ -1,0 +1,347 @@
+
+.newsreader {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+:root{
+    font-family: Newsreader, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.navbar{
+    display: flex;
+    width: 100dvw;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.navbar-brand{
+    margin-left: 1em;
+}
+
+.login-button{
+    margin-right: 1em;
+    top: 1rem;
+    height: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+.login-container{
+    width: 480px;
+    height: 620px;
+    border: #0a0a0a 1px solid;
+    border-radius: 20px;
+    padding: 30px;
+    background: #1a1a1a;
+}
+li{
+    width: 400px;
+    text-align: left;
+}
+
+input{
+    font-size: large;
+    width:400px;
+    height: 30px;
+    border:none;
+    background: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password{
+    text-align: right;
+}
+
+input:focus{
+    outline: #7bff64 1px solid;
+    transition: ease-in;
+}
+
+input:hover{
+    outline: #7bff64 1px solid;
+    transition: ease-out;
+}
+
+.logged-in{
+    margin-top: 3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logged-in button{
+    width: 10em;
+}
+
+.no-account{
+    text-align: center;
+    margin-top: 3em;
+}
+
+.no-account button{
+    background: #242424;
+}
+
+.go-to-login{
+    position: absolute;
+    right: 3em;
+    top:0;
+}
+
+.go-to-login button{
+    background: #242424;
+}
+
+
+.nav-dashboard{
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    max-width: 100%;
+}
+
+.nav-dashboard ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-dashboard ul li{
+    margin-right: 5px;
+}
+.nav-dashboard ul li:hover{
+    color: #7bff64;
+    cursor: pointer;
+}
+
+.stock-title{
+    position: fixed;
+    top:3em;
+    left: 1em;
+
+}
+
+.stock-container{
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 1em;
+    width: 750px;
+    height: 700px;
+    position: absolute;
+    top:4em;
+    left: 7em;
+    max-height: 750px;
+    overflow-y: scroll;
+}
+
+.stock-table{
+    width: 70%;
+
+    border-spacing: 3rem;
+}
+.stock-table tr{
+    width: 600px;
+    margin-top:3em;
+}
+.stock-table tr th{
+    margin: 10em;
+}
+
+.stock-table tr td{
+    margin: 0 3em ;
+}
+
+.add-stock-container{
+    background: #1a1a1a;
+    border-radius: 20px;
+    width: 500px;
+    height: 650px;
+    position: fixed;
+    top:5em;
+    right:2em;
+}
+
+.add-stock-container li{
+    margin-top: 3em;
+}
+
+.overview-section{
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 1em;
+    width: 700px;
+    height: 300px;
+    position: fixed;
+    top: 4em;
+    left: 1em;
+    text-align: left;
+    transition: 0.3s ease-in;
+}
+.overview-table{
+    text-align: left;
+    border-spacing: 3rem;
+}
+.top-selling-stock-section{
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 1em;
+    width: 550px;
+    height: 320px;
+    transition: 0.3s ease-in;
+    position: fixed;
+    top: 4em;
+    right: 1em;
+    text-align: right;
+}
+.top-selling-stock-table{
+    text-align: center;
+    border-spacing: 2rem;
+}
+
+.best-selling-product-section{
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 1em;
+    width: 650px;
+    height: 330px;
+    transition: 0.3s ease-in;
+    position: fixed;
+    bottom: 3em;
+    left: 1em;
+    text-align: left;
+}
+
+.best-selling-product-table{
+    text-align: center;
+    border-spacing: 2rem;
+}
+
+.graph{
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 1em;
+    width: 450px;
+    height: 330px;
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+}
+
+.invoice-info-section{
+    background: #1a1a1a;
+    border-radius: 20px;
+    width: 630px;
+    height: 700px;
+    font-size: 0.6em;
+    position: fixed;
+    left: 3em;
+    top: 5em;
+}
+
+.smaller{
+}
+.address-info{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.invoice-table{
+    border-spacing: 1.5rem;
+    font-size: 1.3em;
+}
+
+.invoice-info-preview{
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 10px;
+    position:fixed;
+    top:3em;
+    right:2em;
+    width:700px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.total{
+    width: 700px;
+    text-align: center;
+}
+
+.get-invoice-button{
+    position: fixed;
+    bottom: 2em;
+    right: 19em;
+}
+
+.outer{
+    margin-top:4em;
+    font-size: 1.2em;
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+}
+.outer input{
+    width: 200px;
+}
+.item-add-button{
+    position: fixed;
+    left:24em;
+    bottom: 2em;
+    width: 10em;
+    height: 5em;
+    font-size: 1.2em;
+}
+.round{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.theme{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.round:hover{
+    width: 60px;
+    height: 60px;
+    transition: 0.3s ease-in;
+    border:1px solid white;
+}
+
+.green{
+    background: #7bff64;
+}
+
+.blue{
+    background: #0147b5;
+}
+
+.purple{
+    background: #5600ff;
+}
+
+.red {
+    background: #f40115;
+}
